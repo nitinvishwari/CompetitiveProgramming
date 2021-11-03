@@ -11,10 +11,21 @@ public class Solution5 {
         Scanner scanner = new Scanner(text);
 
         int t = scanner.nextInt();
+        int c = scanner.nextInt();
+        int globalMin = Integer.MAX_VALUE;
         for(int i=0; i<t; i++) {
-
+            int max = 0;
+            for(int j=0; j<c; j++){
+                int temp = scanner.nextInt();
+                if(temp > max){
+                    max = temp;
+                }
+            }
+            if(max < globalMin){
+                globalMin = max;
+            }
         }
 
-        System.out.println("Output");
+        System.out.println(globalMin);
     }
 }
