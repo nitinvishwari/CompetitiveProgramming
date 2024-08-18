@@ -11,6 +11,7 @@ class Solution3{
     }
     public static int[] groupStrings(String[] words) {
         int l = words.length;
+		return null;
 
     }
 }
